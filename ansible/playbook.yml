@@ -4,7 +4,7 @@ become: yes
 tasks:
 	- name: Copy war file to tomcat
 	copy:
-		src: '/var/snap/jenkins/4865/workspace/MAV_ANS_CICD/target/MAV_ANSIBLE.war'
+		src: '/var/snap/jenkins/4874/workspace/MAV_ANS_CICD/target/MAV_ANSIBLE.war'
 		dest: '/opt/tomcat/webapps'
 	- name: Restart Tomcat
 	systemd:
